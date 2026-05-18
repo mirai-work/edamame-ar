@@ -1,12 +1,5 @@
-<!doctype html>
-<html lang="ja">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>AR枝豆ちゃんと記念撮影</title>
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-</head>
-<body><model-viewer
+<model-viewer
     src="No1_Smile.glb"
     ios-src="No1_Smile.usdz"
     ar
@@ -18,11 +11,16 @@
 <button id="custom-ar-button" slot="ar-button">押してね♪</button>
   </model-viewer>
 <style>
-    #custom-ar-button {
-      font-size: 14px;
+model-viewer {
+      width: 100%;
+      height: 640px;
+      background-color: greenyellow;
+    }
+#custom-ar-button {
+      font-size: 50px;
       position: absolute;
-      bottom: 1px;
-      left: 16px;
+      bottom: 5%;
+      left: 10%;
 align-items: center;
   justify-content: center;
 font-weight: bold;
@@ -33,5 +31,3 @@ background-color: #EC008C; /* 背景色 */
   border-radius: 20px; /* 角の丸み */
     }
   </style>
-</body>
-</html>
